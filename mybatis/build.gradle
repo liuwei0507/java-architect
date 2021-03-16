@@ -14,9 +14,13 @@ repositories {
 dependencies {
 
     implementation('org.mybatis:mybatis:3.5.6')
-    implementation('mysql:mysql-connector-java:5.1.35')
+    implementation('mysql:mysql-connector-java:8.0.18')
     implementation('com.github.pagehelper:pagehelper:5.1.6')
     implementation('log4j:log4j:1.2.17')
+    implementation('org.dom4j:dom4j:2.1.3')
+
+    // ÒÀÀµ×ÓÄ£¿é
+    implementation project(":mybatis-framework")
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }

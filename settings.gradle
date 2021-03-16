@@ -1,3 +1,5 @@
 rootProject.name = 'learning'
 include 'mybatis'
+include 'mybatis-framework'
+include 'design-pattern'
 

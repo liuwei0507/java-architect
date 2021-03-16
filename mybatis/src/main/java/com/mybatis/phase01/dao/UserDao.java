@@ -7,4 +7,6 @@ public interface UserDao {
 
 	User findUserById(int id);
 
+	Integer insertUser(User user);
+
 }
