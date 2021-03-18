@@ -1,5 +1,6 @@
 package com.mybatis.framework.config;
 
+import com.mybatis.framework.sqlsource.SqlSource;
 import org.dom4j.Element;
 
 public class XMLStatementParser {

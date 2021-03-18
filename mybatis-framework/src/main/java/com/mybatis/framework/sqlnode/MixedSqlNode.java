@@ -1,4 +1,6 @@
-package com.mybatis.framework.config;
+package com.mybatis.framework.sqlnode;
+
+import com.mybatis.framework.sqlsource.DynamicContext;
 
 import java.util.ArrayList;
 import java.util.List;

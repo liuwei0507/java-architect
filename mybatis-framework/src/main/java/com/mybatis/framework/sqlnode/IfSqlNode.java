@@ -1,5 +1,6 @@
-package com.mybatis.framework.config;
+package com.mybatis.framework.sqlnode;
 
+import com.mybatis.framework.sqlsource.DynamicContext;
 import com.mybatis.framework.utils.OgnlUtils;
 
 public class IfSqlNode implements SqlNode {
@@ -18,8 +19,10 @@ public class IfSqlNode implements SqlNode {
 
     @Override
     public void apply(DynamicContext context) {
+        // 使用Ognl的api来对test标签属性中的布尔表达式进行处理，获取布尔值
         boolean evaluateBoolean = OgnlUtils.evaluateBoolean(test, context.getBindings().get("_parameter"));
         if (evaluateBoolean) {
+            // 如果test标签属性中的表达式判断为true，才进行子节点的处理
             rootSqlNode.apply(context);
         }
     }

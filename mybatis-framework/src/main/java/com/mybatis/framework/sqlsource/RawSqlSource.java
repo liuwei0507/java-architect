@@ -1,4 +1,7 @@
-package com.mybatis.framework.config;
+package com.mybatis.framework.sqlsource;
+
+import com.mybatis.framework.sqlnode.MixedSqlNode;
+import com.mybatis.framework.sqlnode.SqlNode;
 
 public class RawSqlSource implements SqlSource {
 

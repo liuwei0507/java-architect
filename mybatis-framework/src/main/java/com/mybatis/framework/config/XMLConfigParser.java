@@ -1,6 +1,7 @@
 package com.mybatis.framework.config;
 
 import com.mybatis.framework.utils.DocumentUtils;
+import com.mybatis.framework.utils.Resources;
 import org.apache.commons.dbcp.BasicDataSource;
 import org.dom4j.Document;
 import org.dom4j.Element;

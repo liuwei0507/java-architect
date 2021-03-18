@@ -1,4 +1,6 @@
-package com.mybatis.framework.config;
+package com.mybatis.framework.sqlnode;
+
+import com.mybatis.framework.sqlsource.DynamicContext;
 
 /**
  * 提供对sql脚本的解析

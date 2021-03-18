@@ -1,6 +1,7 @@
-package com.mybatis.framework.config;
+package com.mybatis.framework.sqlsource;
 
 public interface SqlSource {
+
 
     BoundSql getBoundSql(Object param);
 

@@ -1,4 +1,6 @@
-package com.mybatis.framework.config;
+package com.mybatis.framework.sqlnode;
+
+import com.mybatis.framework.sqlsource.DynamicContext;
 
 public class StaticTextSqlNode implements SqlNode {
 
@@ -10,6 +12,7 @@ public class StaticTextSqlNode implements SqlNode {
 
     @Override
     public void apply(DynamicContext context) {
-
+        // sqlÎÄ±¾×·¼Ó
+        context.appendSql(sqlText);
     }
 }

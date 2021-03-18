@@ -1,4 +1,4 @@
-package com.mybatis.framework.config;
+package com.mybatis.framework.utils;
 
 import java.io.InputStream;
 import java.io.Reader;
