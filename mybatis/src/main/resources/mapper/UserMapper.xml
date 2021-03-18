@@ -1,10 +1,10 @@
 <mapper namespace="test">
 	<!-- select标签，封装了SQL语句信息、入参类型、结果映射类型 -->
 	<select id="findUserById"
-		parameterType="com.kkb.mybatis.po.User"
-		resultType="com.kkb.mybatis.po.User" 
+		parameterType="com.mybatis.source.po.User"
+		resultType="com.mybatis.source.po.User"
 		statementType="prepared">
-		
+
 		SELECT * FROM user WHERE id = #{id} AND username like '%${username}'
 		<if test="username != null and username !='' ">
 			AND username like '%${username}'

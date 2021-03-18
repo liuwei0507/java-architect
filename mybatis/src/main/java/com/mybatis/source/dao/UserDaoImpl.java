@@ -18,7 +18,7 @@ public class UserDaoImpl implements UserDao {
         // sqlsessionFactory工厂类去创建sqlsession会话
         SqlSession sqlSession = sqlSessionFactory.openSession();
         // sqlsession接口，开发人员使用它对数据库进行增删改查操作
-        User selectUser = (User) sqlSession.selectOne("test.findUserById", user);
+        User selectUser = sqlSession.selectOne("test.findUserById", user);
         return selectUser;
 
     }

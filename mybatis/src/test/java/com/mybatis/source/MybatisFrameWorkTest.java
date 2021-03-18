@@ -1,7 +1,7 @@
 package com.mybatis.source;
 
 import com.mybatis.framework.config.Configuration;
-import com.mybatis.framework.config.Resources;
+import com.mybatis.framework.utils.Resources;
 import com.mybatis.framework.config.XMLConfigParser;
 import com.mybatis.framework.sqlsession.SqlSessionFactory;
 import com.mybatis.framework.sqlsession.SqlSessionFactoryBuilder;
@@ -38,7 +38,7 @@ public class MybatisFrameWorkTest {
     public void testQueryUserById() {
         String resource = "SqlMapConfig.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
-        // SqlSessionFactory???????????????????????SqlSessionFactory?????
+        // SqlSessionFactoryBuilder
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         UserDao userDao = new UserDaoImpl(sqlSessionFactory);
         User param = new User();
