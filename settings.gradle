@@ -5,4 +5,5 @@ include 'design-pattern'
 include 'spring'
 include 'jvm'
 include 'spring-framework'
+include 'redis'
 
